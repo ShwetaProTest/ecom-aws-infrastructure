@@ -1,0 +1,42 @@
+# Terraform specific
+*.tfstate
+*.tfstate.* 
+terraform.tfvars  # If you have any secret values here
+.terraform/
+
+# Lambda packaging and dependencies
+lambdas/preprocessing.zip
+lambdas/__pycache__/
+
+# General for Python
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment secrets and configurations
+*.env
+
+# General for JavaScript (assuming the JavaScript for capturing user events might have dependencies)
+node_modules/
+package-lock.json
+
+# General for AWS
+aws_credentials/
+
+# IDE and editor specific
+.vscode/
+*.swp
+*.swo
+*.idea/
+*.iml
+
+# Logs and databases 
+*.log
+*.sql
+*.sqlite
+
+# OS generated
+.DS_Store
+Thumbs.db
