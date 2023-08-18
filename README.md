@@ -2,29 +2,39 @@
 This repository contains Terraform scripts and associated utilities to deploy an e-commerce AWS infrastructure that tracks user behavior across multiple online shops and processes this data for further machine learning applications.
 
 ## Structure
-
-.
-├── .github/workflows/
-│   └── terraform_ci.yml
-├── js/
-│   └── track_user_behavior.js
-├── lambdas/
-│   └── preprocessing.zip
-├── scripts/
-│   ├── doppler_secrets.sh
-│   ├── lambda_deploy.sh
-│   └── setup_env.sh
-└── terraform/
-    ├── main.tf
-    ├── variables.tf
-    ├── provider.tf
-    ├── environments/
-    │   ├── dev.tfvars
-    │   ├── staging.tfvars
-    │   └── prod.tfvars
-    └── modules/
-        ├── api-gateway/
-        └── lambda/
+```markdown
+```
+ecom-aws-infrastructure
+│
+├───.github/workflows/
+│   └───terraform_ci.yml
+│
+├───js/
+│   └───track_user_behavior.js
+│
+├───lambdas/
+│   └───preprocessing.zip
+│
+├───scripts/
+│   ├───doppler_secrets.sh
+│   ├───lambda_deploy.sh
+│   └───setup_env.sh
+│
+└───terraform/
+    ├───main.tf
+    ├───variables.tf
+    ├───provider.tf
+    │
+    ├───environments/
+    │   ├───dev.tfvars
+    │   ├───staging.tfvars
+    │   └───prod.tfvars
+    │
+    └───modules/
+        ├───api-gateway/
+        └───lambda/
+```
+```
 
 ## Features
 
