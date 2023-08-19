@@ -6,7 +6,21 @@ Modern e-commerce isn't just about online transactions; it's about understanding
 
 ## Directory Structure
 
-<pre>
+```
+ecom-aws-infrastructure/
+│
+├── .github/
+│ └── workflows/
+│ └── terraform_workflow.yml
+│
+├── js/
+│ └── track_user_behavior.js
+│
+├── lambdas/
+│ └── preprocessing/
+│ ├── main.py
+│ └── requirements.txt
+
 ecom-aws-infrastructure
 - **.github/workflows/**
   - `terraform_workflow.yml`
@@ -50,7 +64,7 @@ ecom-aws-infrastructure
     - **athena/**
     - **redshift/**
     - **glue/**  
-</pre>
+```
         
 ## Key Features:
 
