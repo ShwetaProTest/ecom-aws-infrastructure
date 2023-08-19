@@ -3,10 +3,11 @@ This repository contains Terraform scripts and associated utilities to deploy an
 
 ## Structure
 
-ecom-aws-infrastructure
+<pre>
+ecom-aws-infrastructure/
 │
-- **.github/workflows/**
-  - `terraform_ci.yml`:
+├───.github/workflows/
+│   └───terraform_ci.yml
 │
 ├───js/
 │   └───track_user_behavior.js
@@ -19,25 +20,26 @@ ecom-aws-infrastructure
 │   ├───lambda_deploy.sh
 │   └───setup_env.sh
 │
-└───terraform/
-    ├───main.tf
-    ├───variables.tf
-    ├───provider.tf
-    │
-    ├───environments/
-    │   ├───dev.tfvars
-    │   ├───staging.tfvars
-    │   └───prod.tfvars
-    │
-    └───modules/
-        ├───api-gateway/
-        └───lambda/
-        ├───iam/
-        └───kinesis/
-        ├───s3/
-        └───athena/
-        ├───redshift/
-        └───glue/
+├───terraform/
+│   ├───main.tf
+│   ├───variables.tf
+│   ├───provider.tf
+│   │
+│   ├───environments/
+│   │   ├───dev.tfvars
+│   │   ├───staging.tfvars
+│   │   └───prod.tfvars
+│   │
+│   └───modules/
+│       ├───api-gateway/
+│       ├───lambda/
+│       ├───iam/
+│       ├───kinesis/
+│       ├───s3/
+│       ├───athena/
+│       ├───redshift/
+│       └───glue/
+</pre>
         
 
 ## Features
