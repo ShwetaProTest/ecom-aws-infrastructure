@@ -1,42 +1,50 @@
-# Terraform specific
+# Terraform
+####################
+# Ignore Terraform state files
 *.tfstate
-*.tfstate.* 
-terraform.tfvars  # If you have any secret values here
+*.tfstate.*
+
+# Ignore Terraform plan output files
+*.tfplan
+
+# Ignore override files as they can contain sensitive information
+override.tf
+override.tf.json
+
+# Ignore Terraform crash log files
+crash.log
+
+# Ignore .terraform directories
 .terraform/
 
-# Lambda packaging and dependencies
-lambdas/preprocessing.zip
-lambdas/__pycache__/
+# Lambda functions
+####################
+# If you're using Python, Node.js, or other languages for Lambda, their common ignore items should be added.
+*.zip   # If you're zipping your Lambda functions
 
-# General for Python
+# Node.js specific (if you're using it)
+node_modules/
+npm-debug.log
+
+# Python specific (if you're using it)
 *.pyc
 *.pyo
 *.egg-info/
 dist/
 build/
+*.egg
 
-# Environment secrets and configurations
-*.env
-
-# General for JavaScript (assuming the JavaScript for capturing user events might have dependencies)
-node_modules/
-package-lock.json
-
-# General for AWS
-aws_credentials/
-
-# IDE and editor specific
-.vscode/
-*.swp
-*.swo
-*.idea/
-*.iml
-
-# Logs and databases 
-*.log
-*.sql
-*.sqlite
-
-# OS generated
+# General & Environment files
+####################
+# OS files
 .DS_Store
 Thumbs.db
+
+# IDE files (depending on which IDE you use)
+.vscode/
+.idea/
+
+# Secrets or environment files
+.env
+*.pem
+*.cert

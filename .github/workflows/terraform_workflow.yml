@@ -1,11 +1,24 @@
+# This GitHub Action deploys AWS infrastructure changes using Terraform whenever there are modifications to Terraform files.
+# It supports manual triggering for different environments (like dev, staging, prod) and automates the entire process from 
+# fetching secrets using Doppler, initializing Terraform, to applying Terraform changes.
+
 name: CICD Deployment
 
 on:
+  # Automatic trigger on pushes to the main branch that affect Terraform files.
   push:
     branches:
       - main  
     paths:
       - 'terraform/**.tf'
+
+  # Manual trigger to deploy to specific environments like 'dev', 'staging', or 'prod'.
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'dev'
 
 jobs:
   deploy:
@@ -46,7 +59,7 @@ jobs:
         cd terraform
         terraform apply -auto-approve -var-file=environments/${{ github.event.inputs.environment }}.tfvars
 
-    # Additional: Clear any sensitive environment variables after run (Optional and for added security)
+    # Additional: Clear any sensitive environment variables after run
     - name: Clear Environment Variables
       run: |
         unset AWS_ACCESS_KEY
