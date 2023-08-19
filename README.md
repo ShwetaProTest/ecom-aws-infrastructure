@@ -2,8 +2,7 @@
 This repository contains Terraform scripts and associated utilities to deploy an e-commerce AWS infrastructure that tracks user behavior across multiple online shops and processes this data for further machine learning applications.
 
 ## Structure
-```markdown
-```
+
 ecom-aws-infrastructure
 │
 ├───.github/workflows/
@@ -33,8 +32,6 @@ ecom-aws-infrastructure
     └───modules/
         ├───api-gateway/
         └───lambda/
-```
-```
 
 ## Features
 
