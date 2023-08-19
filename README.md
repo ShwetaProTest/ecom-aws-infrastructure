@@ -6,7 +6,6 @@ Modern e-commerce isn't just about online transactions; it's about understanding
 
 ## Directory Structure
 
-<pre>
 ecom-aws-infrastructure
 - **.github/workflows/**
   - `terraform_workflow.yml`
@@ -49,10 +48,8 @@ ecom-aws-infrastructure
     - **s3/**
     - **athena/**
     - **redshift/**
-    - **glue/**
-<pre>    
+    - **glue/**  
         
-
 ## Key Features:
 
 1. **Real-Time Data Streaming**: Seamlessly capture user interactions across e-commerce platforms and stream the data in real time.
