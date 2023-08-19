@@ -6,6 +6,7 @@ Modern e-commerce isn't just about online transactions; it's about understanding
 
 ## Directory Structure
 
+<pre>
 ecom-aws-infrastructure
 - **.github/workflows/**
   - `terraform_workflow.yml`
