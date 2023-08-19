@@ -20,50 +20,40 @@ ecom-aws-infrastructure/
 │ └── preprocessing/
 │ ├── main.py
 │ └── requirements.txt
+│
+├── scripts/
+│ ├── doppler_secrets.sh
+│ ├── lambda_deploy.sh
+│ └── setup_env.sh
+│
+├── terraform/
+│ ├── main.tf
+│ ├── variables.tf
+│ ├── provider.tf
+│ ├── outputs.tf
+│ ├── .gitignore
+│ ├── README.md
+│ │
+│ ├── environments/
+│ │ ├── dev.tfvars
+│ │ ├── staging.tfvars
+│ │ └── prod.tfvars
+│ │
+│ └── modules/
+│ ├── api-gateway/
+│ ├── athena/
+│ ├── codebuild/
+│ ├── codecommit/
+│ ├── codepipeline/
+│ ├── glue/
+│ ├── iam/
+│ ├── kinesis/
+│ ├── lambda/
+│ ├── networking/
+│ ├── redshift/
+│ ├── s3/
+│ └── glue/
 
-ecom-aws-infrastructure
-- **.github/workflows/**
-  - `terraform_workflow.yml`
-  
-- **js/**
-  - `track_user_behavior.js`
-  
-- **lambdas/**
-  - **preprocessing/**
-  | - `main.py`
-  | - `requirements.txt`
-
-- **scripts/**
-  - `doppler_secrets.sh`
-  - `lambda_deploy.sh`
-  - `setup_env.sh`
-  
-- **terraform/**
-  - `main.tf`
-  - `variables.tf`
-  - `provider.tf`
-  - `outputs.tf`
-  - `.gitignore`
-  - `README.md`
-  
-  - **environments/**
-    - `dev.tfvars`
-    - `staging.tfvars`
-    - `prod.tfvars`
-    
-  - **modules/**
-    - **codebuild/**
-    - **codecommit/**
-    - **codepipeline/**
-    - **networking/**
-    - **api-gateway/**
-    - **lambda/**
-    - **iam/**
-    - **kinesis/**
-    - **s3/**
-    - **athena/**
-    - **redshift/**
-    - **glue/**  
 ```
         
 ## Key Features:
