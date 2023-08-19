@@ -24,6 +24,7 @@ ecom-aws-infrastructure/
 │   ├───main.tf
 │   ├───variables.tf
 │   ├───provider.tf
+│   ├───outputs.tf
 │   │
 │   ├───environments/
 │   │   ├───dev.tfvars
@@ -39,6 +40,9 @@ ecom-aws-infrastructure/
 │       ├───athena/
 │       ├───redshift/
 │       └───glue/
+│       └───sagemaker/
+|───.gitignore
+|───README.md        
 </pre>
         
 
