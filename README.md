@@ -32,6 +32,13 @@ ecom-aws-infrastructure
     └───modules/
         ├───api-gateway/
         └───lambda/
+        ├───iam/
+        └───kinesis/
+        ├───s3/
+        └───athena/
+        ├───redshift/
+        └───glue/
+        
 
 ## Features
 
