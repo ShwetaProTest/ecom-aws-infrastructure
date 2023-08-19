@@ -50,6 +50,7 @@ ecom-aws-infrastructure
     - **athena/**
     - **redshift/**
     - **glue/**  
+</pre>
         
 ## Key Features:
 
