@@ -5,8 +5,8 @@ This repository contains Terraform scripts and associated utilities to deploy an
 
 ecom-aws-infrastructure
 │
-├───.github/workflows/
-│   └───terraform_ci.yml
+- **.github/workflows/**
+  - `terraform_ci.yml`:
 │
 ├───js/
 │   └───track_user_behavior.js
